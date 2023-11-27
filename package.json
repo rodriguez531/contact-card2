@@ -1,0 +1,37 @@
+{
+  "name": "contact-card2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
+    "start": "cd server && node server.js",
+    "server": "cd server nodemon server.js --ignore client",
+    "build": "cd client && npm run build",
+    "client": "cd client && npm start",
+    "heroku-prebuild": "npm install --dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodriguez531/contact-card2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodriguez531/contact-card2/issues"
+  },
+  "homepage": "https://github.com/rodriguez531/contact-card2#readme",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "heroku": "^7.15.2",
+    "local": "^0.3.3",
+    "web": "^0.0.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.89.0"
+  },
+  "engines": {
+    "node": "17.x"
+  }
+}
