@@ -29,6 +29,7 @@
     "web": "^0.0.2"
   },
   "devDependencies": {
+    "html-webpack-plugin": "^5.5.3",
     "webpack": "^5.89.0"
   },
   "engines": {
