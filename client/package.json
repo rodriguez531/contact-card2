@@ -5,8 +5,7 @@
   "private": true,
     "build": "webpack --mode development",
     "dev": "webpack-dev-server",
-    "start": "webpack --watch"
-  },
+    "start": "webpack --watch",
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -25,3 +24,5 @@
     "bootstrap": "^5.3.2"
   }
 }
+
+
