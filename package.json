@@ -30,6 +30,7 @@
     "web": "^0.0.2"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.23.3",
     "html-webpack-plugin": "^5.5.3",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"
