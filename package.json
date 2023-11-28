@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/rodriguez531/contact-card2#readme",
   "dependencies": {
-    "babel-loader": "^9.1.3",
+    "bootstrap": "^5.3.2",
     "concurrently": "^8.2.2",
     "heroku": "^7.15.2",
     "local": "^0.3.3",
@@ -31,8 +31,11 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.23.3",
+    "babel-loader": "^9.1.3",
     "css-loader": "^6.8.1",
     "html-webpack-plugin": "^5.5.3",
+    "ix": "^5.0.0",
+    "npm": "^10.2.4",
     "style-loader": "^3.3.3",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"
