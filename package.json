@@ -1,48 +1,23 @@
 {
-  "name": "contact-card2",
+  "name": "contact-cards",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
-    "start": "cd server && node server.js",
-    "server": "cd server nodemon server.js --ignore client",
+    "start:dev": "concurrently \"cd server && npm run server\"  \"cd client && npm run build\"",
+    "start": "npm run build && cd server && node server.js",
+    "server": "cd server node server.js --ignore client",
     "build": "cd client && npm run build",
+    "install": "concurrently \"cd client && npm install\" \"cd server && npm install\" ",
     "client": "cd client && npm start",
     "heroku-prebuild": "npm install --dev"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rodriguez531/contact-card2.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rodriguez531/contact-card2/issues"
-  },
-  "homepage": "https://github.com/rodriguez531/contact-card2#readme",
   "dependencies": {
-    "bootstrap": "^5.3.2",
-    "concurrently": "^8.2.2",
-    "heroku": "^7.15.2",
-    "local": "^0.3.3",
-    "web": "^0.0.2"
-  },
-  "devDependencies": {
-    "build": "webpack --mode development",
-    "@babel/preset-env": "^7.23.3",
-    "babel-loader": "^9.1.3",
-    "css-loader": "^6.8.1",
-    "html-webpack-plugin": "^5.5.3",
-    "ix": "^5.0.0",
-    "npm": "^10.2.4",
-    "react-scripts": "^5.0.1",
-    "style-loader": "^3.3.3",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4"
+    "concurrently": "^7.0.0"
   },
   "engines": {
-    "node": "17.x"
+    "node": "16.x"
   }
 }
