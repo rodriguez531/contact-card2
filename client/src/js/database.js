@@ -61,7 +61,6 @@ export const postDb = async (name, email, phone, profile)  => {
   // Get confirmation of the request.
   const result = await request;
   console.log('🚀 - data saved to the database', result);
-
 };
 
 // EXPORTED DELETE function

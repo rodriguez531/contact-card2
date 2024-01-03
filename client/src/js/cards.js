@@ -12,8 +12,8 @@ export const fetchCards = async () => {
       for (let data of result) {
         console.log(data);
         let profilePic = data.profile;
-        
-        // Create cards
+        console.log(profilePic);
+
         if (profilePic === "Bear") {
           cardContent+= `
           <div class="card shadow p-3 mb-5 bg-body rounded" data-id="${data.id}">
@@ -29,7 +29,9 @@ export const fetchCards = async () => {
         </div>
         </div>    
         `
+
         } else {
+
           cardContent+= `
           <div class="card shadow p-3 mb-5 bg-body rounded" data-id="${data.id}">
             <div class="card-header" data-name="${data.name}">
@@ -44,6 +46,7 @@ export const fetchCards = async () => {
         </div>
         </div>    
         `
+
         }
       };
       
